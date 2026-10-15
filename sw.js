@@ -1,5 +1,5 @@
-const CACHE = 'liftlog-v1';
-const FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg'];
+const CACHE = 'liftlog-v2';
+const FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg', './machine-pictures.js'];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)));
